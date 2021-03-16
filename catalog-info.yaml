@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: catalog-free-poc-backstage
+  description: An example of a Backstage application.
+  annotations:
+    argocd/app-name: auth-app
+    backstage.io/kubernetes-id: k3s
+  # Example for optional annotations
+  # annotations:
+    # github.com/project-slug: backstage/backstage
+    # backstage.io/techdocs-ref: url:https://github.com/backstage/backstage
+spec:
+  type: website
+  owner: guest
+  lifecycle: production
